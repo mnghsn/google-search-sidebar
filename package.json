@@ -16,8 +16,8 @@
     "url": "https://github.com/jmlntw/google-search-sidebar/issues"
   },
   "scripts": {
-    "build:usercss": "inlinejs -o dist/google-search-sidebar.user.css src/user.css",
-    "build:userjs": "inlinejs -o dist/google-search-sidebar.user.js src/user.js",
+    "build:usercss": "inlinejs -o ./dist/google-search-sidebar.user.css ./src/user.css",
+    "build:userjs": "inlinejs -o ./dist/google-search-sidebar.user.js ./src/user.js",
     "build": "npm run build:usercss & npm run build:userjs",
     "test": "npm run build"
   },
