@@ -27,7 +27,8 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
-<!-- TODO: Add changelog. -->
+* **v0.1.0** (2017-09-16)
+  * First release.
 
 ## License
 
