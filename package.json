@@ -1,0 +1,29 @@
+{
+  "name": "google-search-sidebar",
+  "version": "0.1.0",
+  "description": "A user script and user style to move Google search tools to sidebar.",
+  "author": {
+    "name": "Jimmy Lin",
+    "email": "jmlntw@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/jmlntw/google-search-sidebar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmlntw/google-search-sidebar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmlntw/google-search-sidebar/issues"
+  },
+  "scripts": {
+    "build:usercss": "inlinejs -o dist/google-search-sidebar.user.css src/user.css",
+    "build:userjs": "inlinejs -o dist/google-search-sidebar.user.js src/user.js",
+    "build": "npm run build:usercss & npm run build:userjs",
+    "test": "npm run build:usercss -- -n & npm run build:userjs -- -n"
+  },
+  "devDependencies": {
+    "indent-string": "^3.2.0",
+    "inline-js": "^0.3.0"
+  },
+  "private": true
+}
