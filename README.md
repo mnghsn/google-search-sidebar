@@ -6,6 +6,9 @@ A user script and user style to move Google search tools to sidebar.
 
 ## Screenshot
 
+![Google Search Sidebar (Web Search)](https://raw.githubusercontent.com/jmlntw/google-search-sidebar/master/screenshot-web.png)
+![Google Search Sidebar (Image Search)](https://raw.githubusercontent.com/jmlntw/google-search-sidebar/master/screenshot-image.png)
+
 ## Installation
 
 ### User Script
