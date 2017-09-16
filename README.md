@@ -15,15 +15,15 @@ A user script and user style to move Google search tools to sidebar.
 
 Install a user script manager such as [Greasemonkey](http://www.greasespot.net/) or [Tampermonkey](https://tampermonkey.net/) to your browser, then install this user script:
 
-* From **Greasy Fork**: <!-- TODO: Add link to Greasy Fork. -->
-* From **GitHub**: <!-- TODO: Add link to GitHub. -->
+* From **Greasy Fork**: _TBA_
+* From **GitHub**: https://raw.githubusercontent.com/jmlntw/google-search-sidebar/master/dist/google-search-sidebar.user.js
 
 ### User Style
 
 Install a user style manager such as [Stylish](https://userstyles.org/help/stylish) to your browser, then install this user style:
 
-* From **Userstyles.org**: <!-- TODO: Add link to Userstyles.org. -->
-* From **GitHub**: <!-- TODO: Add link to GitHub. -->
+* From **Userstyles.org**: _TBA_
+* From **GitHub**: https://raw.githubusercontent.com/jmlntw/google-search-sidebar/master/dist/google-search-sidebar.user.css
 
 ## Changelog
 
