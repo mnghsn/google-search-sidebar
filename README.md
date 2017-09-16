@@ -1,10 +1,10 @@
 # Google Search Sidebar
 
+[![Build Status](https://travis-ci.org/jmlntw/google-search-sidebar.svg?branch=master)](https://travis-ci.org/jmlntw/google-search-sidebar)
+
 A user script and user style to move Google search tools to sidebar.
 
 ## Screenshot
-
-<!-- TODO: Add screenshot. -->
 
 ## Installation
 
