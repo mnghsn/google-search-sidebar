@@ -10,6 +10,9 @@ cache:
   directories:
     - "node_modules"
 
+before_install:
+  - npm install --global npm@"^5.4.0"
+
 branches:
   only:
     - master
