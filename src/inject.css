@@ -156,7 +156,9 @@
 /* Image Search Results */
 
 #irc_bg {
-  margin-left: var(--user-sidebar-width) !important;
+  box-sizing: border-box !important;
+  left: 0 !important;
+  background: transparent !important;
 }
 
 #irc_bg .irc_t {
@@ -165,5 +167,6 @@
 }
 
 #irc_bg .irc_t img {
+  object-fit: contain !important;
   max-width: calc(100% - var(--user-sidebar-width)) !important;
 }
