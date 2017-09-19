@@ -14,10 +14,6 @@
 
 /* Search Tools Menu */
 
-#hdtbMenus * {
-  box-sizing: border-box !important;
-}
-
 #hdtbMenus {
   display: block !important;
   position: static !important;
@@ -48,6 +44,10 @@
   border: 0 !important;
   box-shadow: none !important;
   background: transparent !important;
+}
+
+#hdtbMenus .hdtb-mn-hd {
+  box-sizing: border-box !important;
 }
 
 #hdtbMenus .hdtb-mn-hd,
