@@ -156,17 +156,20 @@
 /* Image Search Results */
 
 #irc_bg {
-  box-sizing: border-box !important;
   left: 0 !important;
-  background: transparent !important;
 }
 
-#irc_bg .irc_t {
-  margin-right: calc(var(--user-sidebar-width) * -0.5) !important;
-  margin-left: calc(var(--user-sidebar-width) * -0.5) !important;
+#irc_bg .irc_b {
+  width: calc(33% - var(--user-sidebar-width)) !important;
+  min-width: 200px !important;
 }
 
-#irc_bg .irc_t img {
-  object-fit: contain !important;
-  max-width: calc(100% - var(--user-sidebar-width)) !important;
+/* Image Search Result Buttons */
+
+#irc_bg .irc_but {
+  white-space: nowrap !important;
+}
+
+#irc_bg .irc_but_t_pad {
+  display: none !important;
 }
