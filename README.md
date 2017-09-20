@@ -27,6 +27,9 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.1.1** (2017-09-20)
+  * Fix the image search result layout.
+  * Fix the input field size in "Exact Size" dialog.
 * **v0.1.0** (2017-09-16)
   * First release.
 
