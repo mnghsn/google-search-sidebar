@@ -14,10 +14,6 @@
 
 /* Search Tools Menu */
 
-#hdtbMenus * {
-  box-sizing: border-box !important;
-}
-
 #hdtbMenus {
   display: block !important;
   position: static !important;
@@ -48,6 +44,10 @@
   border: 0 !important;
   box-shadow: none !important;
   background: transparent !important;
+}
+
+#hdtbMenus .hdtb-mn-hd {
+  box-sizing: border-box !important;
 }
 
 #hdtbMenus .hdtb-mn-hd,
@@ -156,14 +156,20 @@
 /* Image Search Results */
 
 #irc_bg {
-  margin-left: var(--user-sidebar-width) !important;
+  left: 0 !important;
 }
 
-#irc_bg .irc_t {
-  margin-right: calc(var(--user-sidebar-width) * -0.5) !important;
-  margin-left: calc(var(--user-sidebar-width) * -0.5) !important;
+#irc_bg .irc_b {
+  width: calc(33% - var(--user-sidebar-width)) !important;
+  min-width: 200px !important;
 }
 
-#irc_bg .irc_t img {
-  max-width: calc(100% - var(--user-sidebar-width)) !important;
+/* Image Search Result Buttons */
+
+#irc_bg .irc_but {
+  white-space: nowrap !important;
+}
+
+#irc_bg .irc_but_t_pad {
+  display: none !important;
 }
