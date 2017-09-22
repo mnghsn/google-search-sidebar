@@ -27,6 +27,9 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.1.2** (2017-09-22)
+  * Improve the performance of user script.
+  * Fix the overflow of image search result page when using user script.
 * **v0.1.1** (2017-09-20)
   * Fix the image search result layout.
   * Fix the input field size in "Exact Size" dialog.
