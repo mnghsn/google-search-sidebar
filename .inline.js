@@ -11,7 +11,7 @@ module.exports = {
   transforms: [
     {
       name: 'indent',
-      transform: function (content, size, indent = ' ') {
+      transform: function (file, content, size, indent = ' ') {
         return indentString(content, parseInt(size, 10), { indent: indent })
       }
     }
