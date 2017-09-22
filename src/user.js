@@ -12,10 +12,16 @@
 // @compatible      firefox
 // @compatible      chrome
 // @compatible      opera
-// @run-at          document-end
-// @grant           GM_addStyle
+// @run-at          document-start
 // ==/UserScript==
 
-GM_addStyle(`
-  $inline('inject.css|indent:2|trim')
-`)
+(function () {
+  var style = document.createElement('style')
+  style.id = 'GM_sidebar'
+  style.type = 'text/css'
+  style.textContent = `
+    $inline('inject.css|indent:4|trim')
+  `
+
+  document.documentElement.appendChild(style)
+})()
