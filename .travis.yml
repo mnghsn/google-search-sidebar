@@ -13,7 +13,6 @@ cache:
 branches:
   only:
     - master
-    - develop
 
 notifications:
   email:
