@@ -1,5 +1,3 @@
-const indentString = require('indent-string')
-
 module.exports = {
   shortcuts: [
     {
@@ -12,6 +10,7 @@ module.exports = {
     {
       name: 'indent',
       transform: function (file, content, size, indent = ' ') {
+        const indentString = require('indent-string')
         return indentString(content, parseInt(size, 10), { indent: indent })
       }
     }
