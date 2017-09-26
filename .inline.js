@@ -2,7 +2,9 @@ module.exports = {
   shortcuts: [
     {
       name: 'pkg',
-      expand: '../package.json'
+      expand: function (file, ...args) {
+        return `../package.json|parse:${args.join()}`
+      }
     }
   ],
 
