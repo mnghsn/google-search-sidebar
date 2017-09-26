@@ -13,6 +13,7 @@
 // @compatible      chrome
 // @compatible      opera
 // @run-at          document-start
+// @grant           none
 // ==/UserScript==
 
 (function () {
