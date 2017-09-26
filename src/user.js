@@ -18,7 +18,6 @@
 
 (function () {
   var style = document.createElement('style')
-  style.id = 'GM_sidebar'
   style.type = 'text/css'
   style.textContent = `
     $inline('inject.css|indent:4|trim')
