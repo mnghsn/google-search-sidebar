@@ -22,6 +22,5 @@
   style.textContent = `
     $inline('inject.css|indent:4|trim')
   `
-
   document.documentElement.appendChild(style)
-})()
+}())
