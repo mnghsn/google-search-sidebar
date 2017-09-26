@@ -7,8 +7,8 @@
 // @license         $inline('pkg:license')
 // @homepage        $inline('pkg:homepage')
 // @supportURL      $inline('pkg:bugs,url')
-// @include         https://www.google.tld/search?*
-// @include         https://www.google.tld/webhp?*
+// @include         https://www.google.*/search?*
+// @include         https://www.google.*/webhp?*
 // @compatible      firefox
 // @compatible      chrome
 // @compatible      opera
