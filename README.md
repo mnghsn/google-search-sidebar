@@ -27,6 +27,8 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.2.0** (2017-09-30)
+  * Compatible with Greasemonkey 4 and Violentmonkey.
 * **v0.1.2** (2017-09-22)
   * Improve the performance of user script.
   * Fix the overflow of image search result page when using user script.
