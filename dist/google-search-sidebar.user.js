@@ -1,23 +1,23 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.1.2
+// @version         0.2.0
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
 // @homepage        https://github.com/jmlntw/google-search-sidebar
 // @supportURL      https://github.com/jmlntw/google-search-sidebar/issues
-// @include         https://www.google.tld/search?*
-// @include         https://www.google.tld/webhp?*
+// @include         https://www.google.*/search?*
+// @include         https://www.google.*/webhp?*
 // @compatible      firefox
 // @compatible      chrome
 // @compatible      opera
 // @run-at          document-start
+// @grant           none
 // ==/UserScript==
 
 (function () {
   var style = document.createElement('style')
-  style.id = 'GM_sidebar'
   style.type = 'text/css'
   style.textContent = `
     /* CSS Variables */
@@ -196,6 +196,5 @@
       display: none !important;
     }
   `
-
   document.documentElement.appendChild(style)
-})()
+}())
