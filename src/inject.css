@@ -227,7 +227,7 @@
  * Make search text input align with main content.
  */
 
-#searchform .tsf-p {
+#gsr:not(.hp) #searchform .tsf-p {
   padding-left: var(--user-sidebar-width) !important;
 }
 
