@@ -1,10 +1,14 @@
-/* CSS Variables */
+/* CSS Variables
+   ========================================================================== */
 
 :root {
   --user-sidebar-width: 200px;
   --user-sidebar-spacer: 30px;
   --user-sidebar-primary-color: #dd4b39;
 }
+
+/* Search Tools Menu
+   ========================================================================== */
 
 /* "Tools" Button */
 
@@ -117,7 +121,8 @@
   opacity: 1 !important;
 }
 
-/* Main Content and Footer */
+/* Main Content and Footer
+   ========================================================================== */
 
 #hdtb-msb .hdtb-mitem:first-child,
 #center_col,
@@ -141,19 +146,19 @@
   padding-left: 0 !important;
 }
 
-/* Top Search Form */
+#rhs {
+  transform: translateX(var(--user-sidebar-spacer)) !important;
+}
+
+/* Top Search Form
+   ========================================================================== */
 
 #searchform .tsf-p {
   padding-left: var(--user-sidebar-width) !important;
 }
 
-/* Wikipedia Information Block */
-
-#rhs {
-  transform: translateX(var(--user-sidebar-spacer)) !important;
-}
-
-/* Image Search Results */
+/* Image Search Results
+   ========================================================================== */
 
 #irc_bg {
   left: 0 !important;
