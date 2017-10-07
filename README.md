@@ -27,6 +27,8 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.2.2** (2017-10-07)
+  * Fix syntax error in user script.
 * **v0.2.1** (2017-10-07)
   * Fix www.google.com/webhp layout.
   * Fix location search result layout.
