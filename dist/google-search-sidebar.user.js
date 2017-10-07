@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.2.1
+// @version         0.2.2
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
@@ -235,7 +235,7 @@
 
     /**
      * Move Wikipedia block to the right.
-     * (Use `translateX` because the block already has margin.)
+     * (Use transform because the block already has margin.)
      */
 
     #cnt:not(.rfli) #rhs {
