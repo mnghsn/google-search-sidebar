@@ -186,9 +186,9 @@
  */
 
 #hdtb-msb .hdtb-mitem:first-child,
-#center_col,
-#fbar ._HR,
-#fbar ._nW {
+#cnt:not(.rfli) #center_col,
+#cnt:not(.rfli) #fbar ._HR,
+#cnt:not(.rfli) #fbar ._nW {
   margin-left: var(--user-sidebar-width) !important;
 }
 
@@ -196,17 +196,17 @@
  * Move "People also search..." bar to the right.
  */
 
-#appbar {
+#cnt:not(.rfli) #appbar {
   width: calc(100% - var(--user-sidebar-width)) !important;
   margin-left: var(--user-sidebar-width) !important;
 }
 
-#appbar .ab_tnav_wrp,
-#appbar #lxhdr {
+#cnt:not(.rfli) #appbar .ab_tnav_wrp,
+#cnt:not(.rfli) #appbar #lxhdr {
   margin-left: 0 !important;
 }
 
-#appbar ._bfj {
+#cnt:not(.rfli) #appbar ._bfj {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
@@ -216,7 +216,7 @@
  * (Use `translateX` because the block already has margin.)
  */
 
-#rhs {
+#cnt:not(.rfli) #rhs {
   transform: translateX(var(--user-sidebar-spacer)) !important;
 }
 
