@@ -213,7 +213,7 @@
 
 /**
  * Move Wikipedia block to the right.
- * (Use `translateX` because the block already has margin.)
+ * (Use transform because the block already has margin.)
  */
 
 #cnt:not(.rfli) #rhs {
