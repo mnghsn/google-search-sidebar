@@ -10,90 +10,140 @@
 /* Search Tools Menu
    ========================================================================== */
 
-/* "Tools" Button */
+/**
+ * Hide "Tools" toggle.
+ */
 
 #hdtb-tls {
   display: none !important;
 }
 
-/* Search Tools Menu */
+/**
+ * 1. Make menu container visible.
+ * 2. Move menu container to the left.
+ * 3. Remove menu container background.
+ */
 
 #hdtbMenus {
-  display: block !important;
-  position: static !important;
-  float: left !important;
-  height: 0 !important;
-  overflow: visible !important;
-  padding: 0 !important;
-  background: transparent !important;
+  display: block !important; /* 1 */
+  position: static !important; /* 2 */
+  float: left !important; /* 2 */
+  height: 0 !important; /* 1 */
+  overflow: visible !important; /* 1 */
+  padding: 0 !important; /* 2 */
+  background: transparent !important; /* 3 */
 }
+
+/**
+ * Remove original menu height.
+ */
 
 #hdtbMenus .hdtb-mn-cont {
   height: 0 !important;
 }
 
+/**
+ * 1. Make dropdowns visible.
+ * 2. Set dropdowns position.
+ * 3. Set dropdowns width as sidebar width.
+ * 4. Wrap dropdowns text if too long.
+ */
+
 #hdtbMenus .hdtb-mn-hd,
 #hdtbMenus .hdtbU {
-  display: block !important;
-  position: relative !important;
-  top: 0 !important;
-  width: var(--user-sidebar-width) !important;
-  min-width: var(--user-sidebar-width) !important;
-  max-width: var(--user-sidebar-width) !important;
-  white-space: normal !important;
+  display: block !important; /* 1 */
+  position: relative !important; /* 2 */
+  top: 0 !important; /* 2 */
+  width: var(--user-sidebar-width) !important; /* 3 */
+  min-width: var(--user-sidebar-width) !important; /* 3 */
+  max-width: var(--user-sidebar-width) !important; /* 3 */
+  white-space: normal !important; /* 4 */
 }
+
+/**
+ * 1. Set dropdowns bottom margin.
+ * 2. Remove dropdowns border and shadow.
+ * 3. Remove dropdowns background.
+ */
 
 #hdtbMenus .hdtbU {
-  margin-bottom: var(--user-sidebar-spacer) !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
+  margin-bottom: var(--user-sidebar-spacer) !important; /* 1 */
+  border: 0 !important; /* 2 */
+  box-shadow: none !important; /* 2 */
+  background: transparent !important; /* 3 */
 }
 
+/**
+ * Prevent dropdown toggle text from overflowing.
+ */
 #hdtbMenus .hdtb-mn-hd {
   box-sizing: border-box !important;
 }
 
+/**
+ * Hide dropdown toggle by default.
+ */
 #hdtbMenus .hdtb-mn-hd,
 #hdtbMenus .hdtb-mn-hd .mn-dwn-arw {
   display: none !important;
 }
 
+/**
+ * Wrap dropdown toggle text if too long.
+ */
 #hdtbMenus .hdtb-mn-hd .mn-hd-txt {
   white-space: normal !important;
 }
 
+/**
+ * 1. Make dropdown toggle visible if some search filters is on.
+ * 2. Set dropdown toggle padding to align with dropdowns.
+ * 3. Emphasize dropdown toggle text.
+ * 4. Remove mouse/touch events.
+ */
 #hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*="×"],
 #hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*=" – "],
 #hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*='<div class="sc">'] {
-  display: block !important;
-  padding-right: var(--user-sidebar-spacer) !important;
-  padding-left: var(--user-sidebar-spacer) !important;
-  color: var(--user-sidebar-primary-color) !important;
-  font-weight: bolder !important;
-  pointer-events: none !important;
+  display: block !important; /* 1 */
+  padding-right: var(--user-sidebar-spacer) !important; /* 2 */
+  padding-left: var(--user-sidebar-spacer) !important; /* 3 */
+  color: var(--user-sidebar-primary-color) !important; /* 3 */
+  font-weight: bolder !important; /* 3 */
+  pointer-events: none !important; /* 4 */
 }
 
+/**
+ * Remove dropdown items background.
+ */
 #hdtbMenus .hdtbItm {
   background: transparent !important;
 }
 
+/**
+ * 1. Remove checkmark on selected dropdown items.
+ * 2. Emphasize selected dropdown items.
+ */
 #hdtbMenus .hdtbItm.hdtbSel {
-  background: transparent !important;
-  color: var(--user-sidebar-primary-color) !important;
-  font-weight: bolder !important;
+  background: transparent !important; /* 1 */
+  color: var(--user-sidebar-primary-color) !important; /* 2 */
+  font-weight: bolder !important; /* 2 */
 }
 
-/* Search Tools Sub Menu */
+/**
+ * 1. Correct sub dropdowns position.
+ * 2. Normalize sub dropdowns text.
+ */
 
 #hdtbMenus .tnv-lt-sm {
-  height: auto !important;
-  overflow: visible !important;
-  font-weight: normal !important;
-  white-space: nowrap !important;
+  height: auto !important; /* 1 */
+  overflow: visible !important; /* 1 */
+  font-weight: normal !important; /* 2 */
+  white-space: nowrap !important; /* 2 */
 }
 
-/* "Custom range..." and "Exactly..." Button */
+/**
+ * Remove "Custom range.." and "Exactly..." button styles.
+ */
 
 #cdrlnk,
 .exylnk {
@@ -101,20 +151,27 @@
   color: inherit !important;
 }
 
-/* "Reset" Button */
+/**
+ * 1. Make "Reset" button visible.
+ * 2. Set "Reset" button padding to align with other dropdown items.
+ */
 
 #hdtb-rst.hdtb-mn-hd {
-  display: block !important;
-  padding: 0 var(--user-sidebar-spacer) !important;
+  display: block !important; /* 1 */
+  padding: 0 var(--user-sidebar-spacer) !important; /* 2 */
 }
 
-/* Color Filter in Image Search */
+/**
+ * Correct image color filter blocks.
+ */
 
 #color-specific #sc-block {
   width: inherit !important;
 }
 
-/* Result Status "About x results (y seconds)" Text */
+/**
+ * Make result status text ("About xxx,xxx results") visible.
+ */
 
 #resultStats {
   top: 0 !important;
@@ -124,12 +181,20 @@
 /* Main Content and Footer
    ========================================================================== */
 
+/**
+ * Move main content and footer to the right.
+ */
+
 #hdtb-msb .hdtb-mitem:first-child,
 #center_col,
 #fbar ._HR,
 #fbar ._nW {
   margin-left: var(--user-sidebar-width) !important;
 }
+
+/**
+ * Move "People also search..." bar to the right.
+ */
 
 #appbar {
   width: calc(100% - var(--user-sidebar-width)) !important;
@@ -146,12 +211,21 @@
   padding-left: 0 !important;
 }
 
+/**
+ * Move Wikipedia block to the right.
+ * (Use `translateX` because the block already has margin.)
+ */
+
 #rhs {
   transform: translateX(var(--user-sidebar-spacer)) !important;
 }
 
 /* Top Search Form
    ========================================================================== */
+
+/**
+ * Make search text input align with main content.
+ */
 
 #searchform .tsf-p {
   padding-left: var(--user-sidebar-width) !important;
@@ -160,20 +234,34 @@
 /* Image Search Results
    ========================================================================== */
 
+/**
+ * Reset image results position.
+ */
+
 #irc_bg {
   left: 0 !important;
 }
+
+/**
+ * Prevent image results from overflowing.
+ */
 
 #irc_bg .irc_b {
   width: calc(33% - var(--user-sidebar-width)) !important;
   min-width: 200px !important;
 }
 
-/* Image Search Result Buttons */
+/**
+ * Do not wrap image result buttons.
+ */
 
 #irc_bg .irc_but {
   white-space: nowrap !important;
 }
+
+/**
+ * Hide image result button text by default (only icon).
+ */
 
 #irc_bg .irc_but_t_pad {
   display: none !important;
