@@ -9,6 +9,8 @@
 // @supportURL      $inline('pkg:bugs,url')
 // @include         https://www.google.*/search?*
 // @include         https://www.google.*/webhp?*
+// @include         https://encrypted.google.com/search?*
+// @include         https://encrypted.google.com/webhp?*
 // @compatible      firefox
 // @compatible      chrome
 // @compatible      opera
