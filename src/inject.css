@@ -266,3 +266,50 @@
 #irc_bg .irc_but_t_pad {
   display: none !important;
 }
+
+/* Action Menu
+   ========================================================================== */
+
+/**
+ * Hide action menu toggle.
+ */
+
+.action-menu .ab_button {
+  display: none !important;
+}
+
+/**
+ * 1. Make action menu visible.
+ * 2. Reset action menu position.
+ * 3. Remove decoration styles from action menu.
+ */
+
+.action-menu .action-menu-panel {
+  display: inline-block !important; /* 2 */
+  visibility: visible !important; /* 1 */
+  position: relative !important; /* 2 */
+  top: -2px !important; /* 2 */
+  border: 0 !important; /* 3 */
+  box-shadow: none !important; /* 3 */
+  background: transparent !important; /* 3 */
+}
+
+/**
+ * 1. Reset action menu items position.
+ * 2. Emphasize action menu items.
+ */
+
+.action-menu .action-menu-item {
+  display: inline-block !important; /* 1 */
+  margin: 0 2px !important; /* 2 */
+  background: #eee !important; /* 3 */
+}
+
+/**
+ * Make action menu items smaller.
+ */
+
+.action-menu a.fl {
+  padding: 2px 5px !important;
+  font-size: 85% !important;
+}
