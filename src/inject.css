@@ -299,14 +299,14 @@
 }
 
 /**
- * 1. Reset action menu items position.
- * 2. Emphasize action menu items.
+ * 1. Make action menu items display inline.
+ * 2. Reset menu items styles.
  */
 
 .action-menu .action-menu-item {
   display: inline-block !important; /* 1 */
   margin: 0 var(--user-action-menu-spacer) !important; /* 2 */
-  background: var(--user-action-menu-background) !important; /* 3 */
+  background: var(--user-action-menu-background) !important; /* 2 */
 }
 
 /**
