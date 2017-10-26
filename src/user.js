@@ -18,11 +18,14 @@
 // @grant           none
 // ==/UserScript==
 
-(function () {
-  var style = document.createElement('style')
+function GM_addStyle (css) {
+  const style = document.createElement('style')
   style.type = 'text/css'
-  style.textContent = `
-    $inline('inject.css|indent:4|trim')
-  `
+  style.textContent = css
   document.documentElement.appendChild(style)
-}())
+  return style
+}
+
+GM_addStyle(`
+  $inline('inject.css|indent:2|trim')
+`)
