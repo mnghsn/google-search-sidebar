@@ -26,6 +26,10 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.3.0** (2017-10-27)
+  * Apply styles to action menu ("Cached", "Similar").
+  * Apply styles to encrypted.google.com.
+  * Refactor user script.
 * **v0.2.2** (2017-10-07)
   * Fix syntax error in user script.
 * **v0.2.1** (2017-10-07)
