@@ -14,5 +14,5 @@
 @-moz-document
   regexp("^https?:\/\/www\.google\.(?:[A-z\.]+)(?:\:\d)?\/(?:(search|webhp))\?.+"),
   regexp("^https?:\/\/encrypted\.google\.com(?:\:\d)?\/(?:(search|webhp))\?.+") {
-  $inline('inject.css|indent:2|trim')
+  /* $inline.line('inject.css|indent:2|trim') */
 }
