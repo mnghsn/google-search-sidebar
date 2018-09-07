@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "indent-string": "^3.2.0",
-    "inline-js": "^0.7.0"
+    "inline-js": "^0.8.0"
   },
   "private": true
 }
