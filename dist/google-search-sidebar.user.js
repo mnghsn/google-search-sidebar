@@ -95,15 +95,14 @@ GM_addStyle(`
 
   /**
    * 1. Set dropdowns bottom margin.
-   * 2. Remove dropdowns border and shadow.
-   * 3. Remove dropdowns background.
+   * 2. Remove decoration styles from dropdowns.
    */
 
   #hdtbMenus .hdtbU {
     margin-bottom: var(--user-sidebar-spacer) !important; /* 1 */
     border: 0 !important; /* 2 */
     box-shadow: none !important; /* 2 */
-    background: transparent !important; /* 3 */
+    background: transparent !important; /* 2 */
   }
 
   /**
@@ -130,7 +129,7 @@ GM_addStyle(`
 
   /**
    * 1. Make dropdown toggle visible if some search filters is on.
-   * 2. Set dropdown toggle padding to align with dropdowns.
+   * 2. Align dropdown toggle with dropdowns.
    * 3. Emphasize dropdown toggle text.
    * 4. Remove mouse/touch events.
    */
@@ -139,7 +138,7 @@ GM_addStyle(`
   #hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*='<div class="sc">'] {
     display: block !important; /* 1 */
     padding-right: var(--user-sidebar-spacer) !important; /* 2 */
-    padding-left: var(--user-sidebar-spacer) !important; /* 3 */
+    padding-left: var(--user-sidebar-spacer) !important; /* 2 */
     color: var(--user-sidebar-primary-color) !important; /* 3 */
     font-weight: bolder !important; /* 3 */
     pointer-events: none !important; /* 4 */
@@ -186,7 +185,7 @@ GM_addStyle(`
 
   /**
    * 1. Make "Reset" button visible.
-   * 2. Set "Reset" button padding to align with other dropdown items.
+   * 2. Align "Reset" button with other dropdown items.
    */
 
   #hdtb-rst.hdtb-mn-hd {
@@ -195,7 +194,7 @@ GM_addStyle(`
   }
 
   /**
-   * Correct image color filter blocks.
+   * Reset color filter blocks in image search.
    */
 
   #color-specific #sc-block {
@@ -257,7 +256,7 @@ GM_addStyle(`
      ========================================================================== */
 
   /**
-   * Make search text input align with main content.
+   * Align search text input with main content.
    */
 
   #gsr:not(.hp) #searchform .tsf-p {
