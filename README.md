@@ -29,22 +29,25 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 * **v0.3.1** (2018-09-11)
   * Update CSS comments.
 * **v0.3.0** (2017-10-27)
-  * Apply styles to action menu ("Cached", "Similar").
-  * Apply styles to encrypted.google.com.
-  * Refactor user script.
+  * Expand the action menu ("Cached", "Similar" links next to the search result).
+  * Refactor the user script.
+  * Make the user script and user styles also run in `encrypted.google.com`.
+  * Add details comments to CSS.
+  * Update screenshot image.
 * **v0.2.2** (2017-10-07)
   * Fix syntax error in user script.
 * **v0.2.1** (2017-10-07)
-  * Fix www.google.com/webhp layout.
+  * Fix `www.google.com/webhp` layout.
   * Fix location search result layout.
 * **v0.2.0** (2017-09-30)
   * Compatible with Greasemonkey 4 and Violentmonkey.
 * **v0.1.2** (2017-09-22)
   * Improve the performance of user script.
-  * Fix the overflow of image search result page when using user script.
+  * Fix the image search result page overflowing.
 * **v0.1.1** (2017-09-20)
   * Fix the image search result layout.
   * Fix the input field size in "Exact Size" dialog.
+  * Add Greasy Fork and Userstyles.org installation links to readme.
 * **v0.1.0** (2017-09-16)
   * First release.
 
