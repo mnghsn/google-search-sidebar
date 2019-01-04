@@ -1,6 +1,6 @@
 {
   "name": "google-search-sidebar",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A user script and user style to move Google search tools to sidebar.",
   "author": {
     "name": "Jimmy Lin",
