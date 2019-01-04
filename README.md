@@ -26,6 +26,8 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.3.2** (2019-01-04)
+  * Bump to the correct version.
 * **v0.3.1** (2018-09-11)
   * Update CSS comments.
 * **v0.3.0** (2017-10-27)
