@@ -270,6 +270,13 @@
   display: none !important;
 }
 
+/* Google Shopping
+   ========================================================================== */
+
+.sh-dr__restricts {
+  width: var(--user-sidebar-width) !important;
+}
+
 /* Action Menu
    ========================================================================== */
 
