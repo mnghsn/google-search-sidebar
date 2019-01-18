@@ -12,7 +12,6 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document
-  regexp("^https?:\/\/www\.google\.(?:[A-z\.]+)(?:\:\d)?\/(?:(search|webhp))\?.+"),
-  regexp("^https?:\/\/encrypted\.google\.com(?:\:\d)?\/(?:(search|webhp))\?.+") {
+  regexp("^https?:\/\/www\.google\.(?:[A-z\.]+)(?:\:\d)?\/(?:(search|webhp))\?.+") {
   /* $inline.line('inject.css|indent:2|trim') */
 }
