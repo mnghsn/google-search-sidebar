@@ -216,11 +216,14 @@
 
 /**
  * Move Wikipedia block to the right.
- * (Use transform because the block already has margin.)
  */
 
-#cnt:not(.rfli) #rhs {
-  transform: translateX(var(--user-sidebar-spacer)) !important;
+#cnt:not(.rfli) #rhscol {
+  margin-left: var(--user-sidebar-width) !important;
+}
+
+#cnt:not(.rfli) #rhs_block {
+  margin-left: calc(-1 * (var(--user-sidebar-width) / 2)) !important;
 }
 
 /* Top Search Form
