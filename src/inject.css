@@ -196,6 +196,18 @@
 }
 
 /**
+ * Align new material icons toolbar.
+*/
+
+#hdtb-msb-vis {
+  margin-left: var(--user-sidebar-spacer) !important;
+}
+
+#hdtb-msb-vis .hdtb-mitem:first-child {
+  margin-left: 0 !important;
+}
+
+/**
  * Move "People also search..." bar to the right.
  */
 
