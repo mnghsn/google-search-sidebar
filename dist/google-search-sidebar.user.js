@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.3.2
+// @version         0.3.3
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
@@ -9,8 +9,6 @@
 // @supportURL      https://github.com/jmlntw/google-search-sidebar/issues
 // @include         https://www.google.*/search?*
 // @include         https://www.google.*/webhp?*
-// @include         https://encrypted.google.com/search?*
-// @include         https://encrypted.google.com/webhp?*
 // @compatible      firefox
 // @compatible      chrome
 // @compatible      opera
@@ -225,6 +223,18 @@ GM_addStyle(`
   }
 
   /**
+   * Align new material icons toolbar.
+  */
+
+  #hdtb-msb-vis {
+    margin-left: var(--user-sidebar-spacer) !important;
+  }
+
+  #hdtb-msb-vis .hdtb-mitem:first-child {
+    margin-left: 0 !important;
+  }
+
+  /**
    * Move "People also search..." bar to the right.
    */
 
@@ -245,11 +255,14 @@ GM_addStyle(`
 
   /**
    * Move Wikipedia block to the right.
-   * (Use transform because the block already has margin.)
    */
 
-  #cnt:not(.rfli) #rhs {
-    transform: translateX(var(--user-sidebar-spacer)) !important;
+  #cnt:not(.rfli) #rhscol {
+    margin-left: var(--user-sidebar-width) !important;
+  }
+
+  #cnt:not(.rfli) #rhs_block {
+    margin-left: calc(-1 * (var(--user-sidebar-width) / 2)) !important;
   }
 
   /* Top Search Form
@@ -297,6 +310,13 @@ GM_addStyle(`
 
   #irc_bg .irc_but_t_pad {
     display: none !important;
+  }
+
+  /* Google Shopping
+     ========================================================================== */
+
+  .sh-dr__restricts {
+    width: var(--user-sidebar-width) !important;
   }
 
   /* Action Menu
