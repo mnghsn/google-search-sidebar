@@ -26,6 +26,12 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.3.3** (2019-06-18)
+  * Fix sidebar overlapping in Google Shopping.
+  * Fix Wikipedia block position.
+  * Fix the new toolbar position.
+  * Remove `encrypted.google.com`.
+  * Update screenshot image.
 * **v0.3.2** (2019-01-04)
   * Bump to the correct version.
 * **v0.3.1** (2018-09-11)
