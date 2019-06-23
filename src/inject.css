@@ -65,6 +65,13 @@
 }
 
 /**
+ * No wrap text in sub dropdown menu.
+ */
+#hdtbMenus .hdtbU .hdtbItm .hdtb-mn-c {
+  white-space: nowrap !important;
+}
+
+/**
  * 1. Set dropdowns bottom margin.
  * 2. Remove decoration styles from dropdowns.
  */
