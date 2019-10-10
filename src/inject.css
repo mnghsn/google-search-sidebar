@@ -268,28 +268,11 @@
 }
 
 /**
- * Prevent image results from overflowing.
- */
-
-#irc_bg .irc_b {
-  width: calc(33% - var(--user-sidebar-width)) !important;
-  min-width: 200px !important;
-}
-
-/**
  * Do not wrap image result buttons.
  */
 
 #irc_bg .irc_but {
   white-space: nowrap !important;
-}
-
-/**
- * Hide image result button text by default (only icon).
- */
-
-#irc_bg .irc_but_t_pad {
-  display: none !important;
 }
 
 /* Google Shopping
