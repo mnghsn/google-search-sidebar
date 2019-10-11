@@ -26,6 +26,9 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.3.4** (2019-10-11)
+  * Fix Evernote Similar Search block (WebExtension).
+  * Fix new image search results layout.
 * **v0.3.3** (2019-06-18)
   * Fix sidebar overlapping in Google Shopping.
   * Fix Wikipedia block position.
