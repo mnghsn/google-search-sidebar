@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.3.3
+// @version         0.3.4
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
@@ -89,6 +89,13 @@ GM_addStyle(`
     min-width: var(--user-sidebar-width) !important; /* 3 */
     max-width: var(--user-sidebar-width) !important; /* 3 */
     white-space: normal !important; /* 4 */
+  }
+
+  /**
+   * No wrap text in sub dropdown menu.
+   */
+  #hdtbMenus .hdtbU .hdtbItm .hdtb-mn-c {
+    white-space: nowrap !important;
   }
 
   /**
@@ -288,28 +295,11 @@ GM_addStyle(`
   }
 
   /**
-   * Prevent image results from overflowing.
-   */
-
-  #irc_bg .irc_b {
-    width: calc(33% - var(--user-sidebar-width)) !important;
-    min-width: 200px !important;
-  }
-
-  /**
    * Do not wrap image result buttons.
    */
 
   #irc_bg .irc_but {
     white-space: nowrap !important;
-  }
-
-  /**
-   * Hide image result button text by default (only icon).
-   */
-
-  #irc_bg .irc_but_t_pad {
-    display: none !important;
   }
 
   /* Google Shopping
@@ -364,5 +354,16 @@ GM_addStyle(`
   .action-menu a.fl {
     padding: var(--user-action-menu-spacer) calc(var(--user-action-menu-spacer) * 2) !important;
     font-size: var(--user-action-menu-font-size) !important;
+  }
+
+  /* Third-Party Compatibility
+     ========================================================================== */
+
+  /**
+   * Align Evernote Similar Search block.
+   */
+
+  #simSearchFrame {
+    margin-left: calc(-1 * (var(--user-sidebar-width) / 2)) !important;
   }
 `)
