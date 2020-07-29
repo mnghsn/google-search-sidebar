@@ -56,7 +56,7 @@ GM_addStyle(`
    */
 
   #hdtbMenus {
-    opacity: 1 !important;
+    opacity: 1 !important; /* 1 */
     display: block !important; /* 1 */
     position: static !important; /* 2 */
     float: left !important; /* 2 */
