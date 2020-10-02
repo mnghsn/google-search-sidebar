@@ -26,6 +26,9 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.3.5** (2020-10-02)
+  * Partially fix for the new Google design.
+  * Known Issue: Not work in Google images search.
 * **v0.3.4** (2019-10-11)
   * Fix Evernote Similar Search block (WebExtension).
   * Fix new image search results layout.
