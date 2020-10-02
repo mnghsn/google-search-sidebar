@@ -265,7 +265,7 @@ div.EwsJzb > ul {
  * Hide action menu toggle.
  */
 
-.action-menu .ab_button {
+.action-menu > a {
   display: none !important;
 }
 
