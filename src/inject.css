@@ -53,15 +53,23 @@
  * 3. Set dropdowns width as sidebar width.
  * 4. Wrap dropdowns text if too long.
  */
-
-#hdtbMenus .hdtb-mn-hd,
-#hdtbMenus .hdtbU {
+#hdtbMenus g-popup {
   display: block !important; /* 1 */
-  position: relative !important; /* 2 */
-  top: 0 !important; /* 2 */
   width: var(--user-sidebar-width) !important; /* 3 */
   min-width: var(--user-sidebar-width) !important; /* 3 */
   max-width: var(--user-sidebar-width) !important; /* 3 */
+}
+
+div.EwsJzb {
+  display: block !important;
+  position: static !important;
+  top: 0 !important;
+}
+
+div.EwsJzb > ul {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
   white-space: normal !important; /* 4 */
 }
 
@@ -184,9 +192,9 @@
  * Make result status text ("About xxx,xxx results") visible.
  */
 
-#resultStats {
-  top: 0 !important;
+.hdtb-ab-o .LHJvCe {
   opacity: 1 !important;
+  top: 0 !important;
 }
 
 /* Main Content and Footer
@@ -196,10 +204,8 @@
  * Move main content and footer to the right.
  */
 
-#hdtb-msb .hdtb-mitem:first-child,
-#cnt:not(.rfli) #center_col,
-#cnt:not(.rfli) #fbar ._HR,
-#cnt:not(.rfli) #fbar ._nW {
+#center_col,
+#slim_appbar {
   margin-left: var(--user-sidebar-width) !important;
 }
 
@@ -208,42 +214,11 @@
 */
 
 #hdtb-msb-vis {
-  margin-left: var(--user-sidebar-spacer) !important;
+  margin-left: var(--user-sidebar-width) !important;
 }
 
 #hdtb-msb-vis .hdtb-mitem:first-child {
   margin-left: 0 !important;
-}
-
-/**
- * Move "People also search..." bar to the right.
- */
-
-#cnt:not(.rfli) #appbar {
-  width: calc(100% - var(--user-sidebar-width)) !important;
-  margin-left: var(--user-sidebar-width) !important;
-}
-
-#cnt:not(.rfli) #appbar .ab_tnav_wrp,
-#cnt:not(.rfli) #appbar #lxhdr {
-  margin-left: 0 !important;
-}
-
-#cnt:not(.rfli) #appbar ._bfj {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
-
-/**
- * Move Wikipedia block to the right.
- */
-
-#cnt:not(.rfli) #rhscol {
-  margin-left: var(--user-sidebar-width) !important;
-}
-
-#cnt:not(.rfli) #rhs_block {
-  margin-left: calc(-1 * (var(--user-sidebar-width) / 2)) !important;
 }
 
 /* Top Search Form
@@ -326,7 +301,8 @@
  */
 
 .action-menu a.fl {
-  padding: var(--user-action-menu-spacer) calc(var(--user-action-menu-spacer) * 2) !important;
+  padding: var(--user-action-menu-spacer)
+    calc(var(--user-action-menu-spacer) * 2) !important;
   font-size: var(--user-action-menu-font-size) !important;
 }
 
