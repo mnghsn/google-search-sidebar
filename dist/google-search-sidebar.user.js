@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.3.5
+// @version         0.3.6
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
@@ -342,5 +342,22 @@ GM_addStyle(`
 
   #simSearchFrame {
     margin-left: calc(-1 * (var(--user-sidebar-width) / 2)) !important;
+  }
+
+  /*
+   * Fix Google Search Region dropdown menu.
+   */
+
+  .hdtb-mn-cont > .hide-focus-ring {
+    display: block !important;
+    width: var(--user-sidebar-width) !important;
+    min-width: var(--user-sidebar-width) !important;
+    max-width: var(--user-sidebar-width) !important;
+  }
+
+  ul.gm-region-menu-dropdown {
+    display: block;
+    position: static;
+    box-shadow: none;
   }
 `)
