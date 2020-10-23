@@ -21,7 +21,7 @@ Install a user script manager such as [Greasemonkey](http://www.greasespot.net/)
 
 Install a user style manager such as [Stylish](https://userstyles.org/help/stylish) to your browser, then install this user style:
 
-* From **Userstyles.org**: https://userstyles.org/styles/148233/google-search-sidebar
+* From **Greasy Fork**: https://greasyfork.org/en/scripts/414403-google-search-sidebar
 * From **GitHub**: https://raw.githubusercontent.com/jmlntw/google-search-sidebar/master/dist/google-search-sidebar.user.css
 
 ## Changelog
