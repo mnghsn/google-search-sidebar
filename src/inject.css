@@ -24,19 +24,16 @@
 
 /**
  * 1. Make menu container visible.
- * 2. Move menu container to the left.
+ * 2. Set the sidebar width.
  * 3. Remove menu container background.
  */
 
 #hdtbMenus {
-  opacity: 1 !important; /* 1 */
   display: block !important; /* 1 */
-  position: static !important; /* 2 */
-  float: left !important; /* 2 */
-  height: 0 !important; /* 1 */
-  overflow: visible !important; /* 1 */
-  padding: 0 !important; /* 2 */
-  background: transparent !important; /* 3 */
+  position: absolute !important; /* 1 */
+  top: 68px !important; /* 1 */
+  width: var(--user-sidebar-width); /* 2 */
+  background: unset !important; /* 3 */
 }
 
 /**
@@ -49,152 +46,62 @@
 
 /**
  * 1. Make dropdowns visible.
- * 2. Set dropdowns position.
- * 3. Set dropdowns width as sidebar width.
+ * 2. Add bottom space to each dropdown.
+ * 3. Remove dropdown background and shadow.
  * 4. Wrap dropdowns text if too long.
  */
-#hdtbMenus g-popup {
+#hdtbMenus div.EwsJzb {
   display: block !important; /* 1 */
-  width: var(--user-sidebar-width) !important; /* 3 */
-  min-width: var(--user-sidebar-width) !important; /* 3 */
-  max-width: var(--user-sidebar-width) !important; /* 3 */
+  position: static !important; /* 1 */
 }
 
-div.EwsJzb {
-  display: block !important;
-  position: static !important;
-  top: 0 !important;
+#hdtbMenus div.sAKBe {
+  box-shadow: none !important; /* 3 */
+  border-radius: 0 !important; /* 3 */
 }
 
-div.EwsJzb > ul {
-  border: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
+#hdtbMenus g-menu {
+  padding-top: 0 !important; /* 2 */
+  padding-bottom: var(--user-sidebar-spacer) !important; /* 2 */
+  background: unset !important; /* 3 */
+}
+
+#hdtbMenus div.znKVS {
   white-space: normal !important; /* 4 */
-}
-
-/**
- * No wrap text in sub dropdown menu.
- */
-#hdtbMenus .hdtbU .hdtbItm .hdtb-mn-c {
-  white-space: nowrap !important;
-}
-
-/**
- * 1. Set dropdowns bottom margin.
- * 2. Remove decoration styles from dropdowns.
- */
-
-#hdtbMenus .hdtbU {
-  margin-bottom: var(--user-sidebar-spacer) !important; /* 1 */
-  border: 0 !important; /* 2 */
-  box-shadow: none !important; /* 2 */
-  background: transparent !important; /* 2 */
-}
-
-/**
- * Prevent dropdown toggle text from overflowing.
- */
-#hdtbMenus .hdtb-mn-hd {
-  box-sizing: border-box !important;
 }
 
 /**
  * Hide dropdown toggle by default.
  */
-#hdtbMenus .hdtb-mn-hd,
-#hdtbMenus .hdtb-mn-hd .mn-dwn-arw {
+#hdtbMenus div.rIbAWc {
   display: none !important;
-}
-
-/**
- * Wrap dropdown toggle text if too long.
- */
-#hdtbMenus .hdtb-mn-hd .mn-hd-txt {
-  white-space: normal !important;
-}
-
-/**
- * 1. Make dropdown toggle visible if some search filters is on.
- * 2. Align dropdown toggle with dropdowns.
- * 3. Emphasize dropdown toggle text.
- * 4. Remove mouse/touch events.
- */
-#hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*="×"],
-#hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*=" – "],
-#hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*='<div class="sc">'] {
-  display: block !important; /* 1 */
-  padding-right: var(--user-sidebar-spacer) !important; /* 2 */
-  padding-left: var(--user-sidebar-spacer) !important; /* 2 */
-  color: var(--user-sidebar-primary-color) !important; /* 3 */
-  font-weight: bolder !important; /* 3 */
-  pointer-events: none !important; /* 4 */
-}
-
-/**
- * Remove dropdown items background.
- */
-#hdtbMenus .hdtbItm {
-  background: transparent !important;
 }
 
 /**
  * 1. Remove checkmark on selected dropdown items.
  * 2. Emphasize selected dropdown items.
  */
-#hdtbMenus .hdtbItm.hdtbSel {
-  background: transparent !important; /* 1 */
+#hdtbMenus g-menu-item.nvELY {
+  background-image: none !important; /* 1 */
   color: var(--user-sidebar-primary-color) !important; /* 2 */
   font-weight: bolder !important; /* 2 */
 }
 
 /**
- * 1. Correct sub dropdowns position.
- * 2. Normalize sub dropdowns text.
+ * Align the "Clear" button in the bottom of sidebar.
  */
-
-#hdtbMenus .tnv-lt-sm {
-  height: auto !important; /* 1 */
-  overflow: visible !important; /* 1 */
-  font-weight: normal !important; /* 2 */
-  white-space: nowrap !important; /* 2 */
-}
-
-/**
- * Remove "Custom range.." and "Exactly..." button styles.
- */
-
-#cdrlnk,
-.exylnk {
-  background: transparent !important;
-  color: inherit !important;
-}
-
-/**
- * 1. Make "Reset" button visible.
- * 2. Align "Reset" button with other dropdown items.
- */
-
-#hdtb-rst.hdtb-mn-hd {
-  display: block !important; /* 1 */
-  padding: 0 var(--user-sidebar-spacer) !important; /* 2 */
-}
-
-/**
- * Reset color filter blocks in image search.
- */
-
-#color-specific #sc-block {
-  width: inherit !important;
+#hdtbMenus #hdtb-rst {
+  display: block !important;
+  padding: 0 var(--user-sidebar-spacer) !important;
 }
 
 /**
  * Make result status text ("About xxx,xxx results") visible.
  */
 
-.hdtb-ab-o .LHJvCe {
+#extabar div.LHJvCe {
+  position: static !important;
   opacity: 1 !important;
-  top: 0 !important;
 }
 
 /* Main Content and Footer
@@ -206,7 +113,9 @@ div.EwsJzb > ul {
 
 #center_col,
 #slim_appbar {
-  margin-left: var(--user-sidebar-width) !important;
+  padding-inline-start: calc(
+    var(--user-sidebar-width) - 180px + var(--user-sidebar-spacer)
+  ) !important;
 }
 
 /**
@@ -214,48 +123,35 @@ div.EwsJzb > ul {
 */
 
 #hdtb-msb-vis {
-  margin-left: var(--user-sidebar-width) !important;
+  padding-inline-start: calc(
+    var(--user-sidebar-width) - 180px + var(--user-sidebar-spacer)
+  ) !important;
 }
 
-#hdtb-msb-vis .hdtb-mitem:first-child {
+/**
+ * Move "People also search for" carousel.
+ */
+
+#extabar div[role="navigation"] {
+  padding-inline-start: calc(
+    var(--user-sidebar-width) + var(--user-sidebar-spacer)
+  ) !important;
+}
+
+#extabar div.LXqMce {
   margin-left: 0 !important;
 }
 
-/* Top Search Form
-   ========================================================================== */
-
-/**
- * Align search text input with main content.
- */
-
-#gsr:not(.hp) #searchform .tsf-p {
-  padding-left: var(--user-sidebar-width) !important;
+#extabar div.LXqMce:dir(rtl) {
+  margin-right: 0 !important;
 }
 
-/* Image Search Results
-   ========================================================================== */
-
-/**
- * Reset image results position.
- */
-
-#irc_bg {
-  left: 0 !important;
+#extabar div[role="list"] {
+  padding-left: 0 !important;
 }
 
-/**
- * Do not wrap image result buttons.
- */
-
-#irc_bg .irc_but {
-  white-space: nowrap !important;
-}
-
-/* Google Shopping
-   ========================================================================== */
-
-.sh-dr__restricts {
-  width: var(--user-sidebar-width) !important;
+#extabar div[role="list"]:dir(rtl) {
+  padding-right: 0 !important;
 }
 
 /* Action Menu
