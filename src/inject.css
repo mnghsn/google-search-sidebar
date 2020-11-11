@@ -73,23 +73,8 @@
 /**
  * Hide dropdown toggle by default.
  */
-#hdtbMenus .hdtb-mn-hd,
-#hdtbMenus .hdtb-mn-hd .mn-dwn-arw {
+#hdtbMenus div.rIbAWc {
   display: none !important;
-}
-
-/**
- * Wrap dropdown toggle text if too long.
- */
-#hdtbMenus .hdtb-mn-hd .mn-hd-txt {
-  white-space: normal !important;
-}
-
-/**
- * Remove dropdown items background.
- */
-#hdtbMenus .hdtbItm {
-  background: transparent !important;
 }
 
 /**
