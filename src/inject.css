@@ -88,13 +88,11 @@
 }
 
 /**
- * 1. Make "Reset" button visible.
- * 2. Align "Reset" button with other dropdown items.
+ * Align the "Clear" button in the bottom of sidebar.
  */
-
-#hdtb-rst.hdtb-mn-hd {
-  display: block !important; /* 1 */
-  padding: 0 var(--user-sidebar-spacer) !important; /* 2 */
+#hdtbMenus #hdtb-rst {
+  display: block !important;
+  padding: 0 var(--user-sidebar-spacer) !important;
 }
 
 /**
