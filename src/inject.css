@@ -115,23 +115,6 @@ div.EwsJzb > ul {
 }
 
 /**
- * 1. Make dropdown toggle visible if some search filters is on.
- * 2. Align dropdown toggle with dropdowns.
- * 3. Emphasize dropdown toggle text.
- * 4. Remove mouse/touch events.
- */
-#hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*="×"],
-#hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*=" – "],
-#hdtbMenus .hdtb-mn-hd.hdtb-tsel[aria-label*='<div class="sc">'] {
-  display: block !important; /* 1 */
-  padding-right: var(--user-sidebar-spacer) !important; /* 2 */
-  padding-left: var(--user-sidebar-spacer) !important; /* 2 */
-  color: var(--user-sidebar-primary-color) !important; /* 3 */
-  font-weight: bolder !important; /* 3 */
-  pointer-events: none !important; /* 4 */
-}
-
-/**
  * Remove dropdown items background.
  */
 #hdtbMenus .hdtbItm {
@@ -149,28 +132,6 @@ div.EwsJzb > ul {
 }
 
 /**
- * 1. Correct sub dropdowns position.
- * 2. Normalize sub dropdowns text.
- */
-
-#hdtbMenus .tnv-lt-sm {
-  height: auto !important; /* 1 */
-  overflow: visible !important; /* 1 */
-  font-weight: normal !important; /* 2 */
-  white-space: nowrap !important; /* 2 */
-}
-
-/**
- * Remove "Custom range.." and "Exactly..." button styles.
- */
-
-#cdrlnk,
-.exylnk {
-  background: transparent !important;
-  color: inherit !important;
-}
-
-/**
  * 1. Make "Reset" button visible.
  * 2. Align "Reset" button with other dropdown items.
  */
@@ -178,14 +139,6 @@ div.EwsJzb > ul {
 #hdtb-rst.hdtb-mn-hd {
   display: block !important; /* 1 */
   padding: 0 var(--user-sidebar-spacer) !important; /* 2 */
-}
-
-/**
- * Reset color filter blocks in image search.
- */
-
-#color-specific #sc-block {
-  width: inherit !important;
 }
 
 /**
@@ -219,43 +172,6 @@ div.EwsJzb > ul {
 
 #hdtb-msb-vis .hdtb-mitem:first-child {
   margin-left: 0 !important;
-}
-
-/* Top Search Form
-   ========================================================================== */
-
-/**
- * Align search text input with main content.
- */
-
-#gsr:not(.hp) #searchform .tsf-p {
-  padding-left: var(--user-sidebar-width) !important;
-}
-
-/* Image Search Results
-   ========================================================================== */
-
-/**
- * Reset image results position.
- */
-
-#irc_bg {
-  left: 0 !important;
-}
-
-/**
- * Do not wrap image result buttons.
- */
-
-#irc_bg .irc_but {
-  white-space: nowrap !important;
-}
-
-/* Google Shopping
-   ========================================================================== */
-
-.sh-dr__restricts {
-  width: var(--user-sidebar-width) !important;
 }
 
 /* Action Menu
