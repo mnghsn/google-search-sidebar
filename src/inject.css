@@ -46,54 +46,28 @@
 
 /**
  * 1. Make dropdowns visible.
- * 2. Set dropdowns position.
- * 3. Set dropdowns width as sidebar width.
+ * 2. Add bottom space to each dropdown.
+ * 3. Remove dropdown background and shadow.
  * 4. Wrap dropdowns text if too long.
  */
-#hdtbMenus g-popup {
+#hdtbMenus div.EwsJzb {
   display: block !important; /* 1 */
-  width: var(--user-sidebar-width) !important; /* 3 */
-  min-width: var(--user-sidebar-width) !important; /* 3 */
-  max-width: var(--user-sidebar-width) !important; /* 3 */
+  position: static !important; /* 1 */
 }
 
-div.EwsJzb {
-  display: block !important;
-  position: static !important;
-  top: 0 !important;
+#hdtbMenus div.sAKBe {
+  box-shadow: none !important; /* 3 */
+  border-radius: 0 !important; /* 3 */
 }
 
-div.EwsJzb > ul {
-  border: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
+#hdtbMenus g-menu {
+  padding-top: 0 !important; /* 2 */
+  padding-bottom: var(--user-sidebar-spacer) !important; /* 2 */
+  background: unset !important; /* 3 */
+}
+
+#hdtbMenus div.znKVS {
   white-space: normal !important; /* 4 */
-}
-
-/**
- * No wrap text in sub dropdown menu.
- */
-#hdtbMenus .hdtbU .hdtbItm .hdtb-mn-c {
-  white-space: nowrap !important;
-}
-
-/**
- * 1. Set dropdowns bottom margin.
- * 2. Remove decoration styles from dropdowns.
- */
-
-#hdtbMenus .hdtbU {
-  margin-bottom: var(--user-sidebar-spacer) !important; /* 1 */
-  border: 0 !important; /* 2 */
-  box-shadow: none !important; /* 2 */
-  background: transparent !important; /* 2 */
-}
-
-/**
- * Prevent dropdown toggle text from overflowing.
- */
-#hdtbMenus .hdtb-mn-hd {
-  box-sizing: border-box !important;
 }
 
 /**
