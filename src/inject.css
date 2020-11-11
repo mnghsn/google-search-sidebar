@@ -81,8 +81,8 @@
  * 1. Remove checkmark on selected dropdown items.
  * 2. Emphasize selected dropdown items.
  */
-#hdtbMenus .hdtbItm.hdtbSel {
-  background: transparent !important; /* 1 */
+#hdtbMenus g-menu-item.nvELY {
+  background-image: none !important; /* 1 */
   color: var(--user-sidebar-primary-color) !important; /* 2 */
   font-weight: bolder !important; /* 2 */
 }
