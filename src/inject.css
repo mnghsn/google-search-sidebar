@@ -99,9 +99,9 @@
  * Make result status text ("About xxx,xxx results") visible.
  */
 
-.hdtb-ab-o .LHJvCe {
+#extabar div.LHJvCe {
+  position: static !important;
   opacity: 1 !important;
-  top: 0 !important;
 }
 
 /* Main Content and Footer
