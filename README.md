@@ -26,6 +26,8 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.3.7** (2020-11-11)
+  * Fix CSS to match the latest Google Search layout.
 * **v0.3.6** (2020-10-23)
   * Restore the compatibility with [Google Search Region](https://github.com/jmlntw/google-search-region)
 * **v0.3.5** (2020-10-02)
