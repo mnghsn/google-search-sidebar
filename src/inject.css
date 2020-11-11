@@ -24,19 +24,16 @@
 
 /**
  * 1. Make menu container visible.
- * 2. Move menu container to the left.
+ * 2. Set the sidebar width.
  * 3. Remove menu container background.
  */
 
 #hdtbMenus {
-  opacity: 1 !important; /* 1 */
   display: block !important; /* 1 */
-  position: static !important; /* 2 */
-  float: left !important; /* 2 */
-  height: 0 !important; /* 1 */
-  overflow: visible !important; /* 1 */
-  padding: 0 !important; /* 2 */
-  background: transparent !important; /* 3 */
+  position: absolute !important; /* 1 */
+  top: 68px !important; /* 1 */
+  width: var(--user-sidebar-width); /* 2 */
+  background: unset !important; /* 3 */
 }
 
 /**
