@@ -159,7 +159,9 @@ div.EwsJzb > ul {
 
 #center_col,
 #slim_appbar {
-  margin-left: var(--user-sidebar-width) !important;
+  padding-inline-start: calc(
+    var(--user-sidebar-width) - 180px + var(--user-sidebar-spacer)
+  ) !important;
 }
 
 /**
@@ -167,11 +169,9 @@ div.EwsJzb > ul {
 */
 
 #hdtb-msb-vis {
-  margin-left: var(--user-sidebar-width) !important;
-}
-
-#hdtb-msb-vis .hdtb-mitem:first-child {
-  margin-left: 0 !important;
+  padding-inline-start: calc(
+    var(--user-sidebar-width) - 180px + var(--user-sidebar-spacer)
+  ) !important;
 }
 
 /* Action Menu
