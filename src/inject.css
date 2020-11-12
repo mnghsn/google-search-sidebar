@@ -111,7 +111,7 @@
  * Move main content and footer to the right.
  */
 
-#center_col,
+#rcnt,
 #slim_appbar {
   padding-inline-start: calc(
     var(--user-sidebar-width) - 180px + var(--user-sidebar-spacer)
