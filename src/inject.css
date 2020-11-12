@@ -119,6 +119,16 @@
 }
 
 /**
+ * Align the top carousel when searching movies.
+ */
+
+#kx {
+  margin-inline-start: calc(
+    var(--user-sidebar-width) + var(--user-sidebar-spacer)
+  ) !important;
+}
+
+/**
  * Align new material icons toolbar.
 */
 
