@@ -12,7 +12,7 @@
 // @compatible      firefox
 // @compatible      chrome
 // @compatible      opera
-// @run-at          document-start
+// @run-at          document-end
 // @grant           none
 // ==/UserScript==
 
@@ -20,7 +20,7 @@ function GM_addStyle (css) {
   const style = document.createElement('style')
   style.type = 'text/css'
   style.textContent = css
-  document.documentElement.appendChild(style)
+  document.head.appendChild(style)
   return style
 }
 
