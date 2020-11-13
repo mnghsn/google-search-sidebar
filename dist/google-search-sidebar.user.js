@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.3.7
+// @version         0.3.8
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
@@ -12,7 +12,7 @@
 // @compatible      firefox
 // @compatible      chrome
 // @compatible      opera
-// @run-at          document-start
+// @run-at          document-end
 // @grant           none
 // ==/UserScript==
 
@@ -20,7 +20,7 @@ function GM_addStyle (css) {
   const style = document.createElement('style')
   style.type = 'text/css'
   style.textContent = css
-  document.documentElement.appendChild(style)
+  document.head.appendChild(style)
   return style
 }
 
@@ -138,10 +138,20 @@ GM_addStyle(`
    * Move main content and footer to the right.
    */
 
-  #center_col,
+  #rcnt,
   #slim_appbar {
     padding-inline-start: calc(
       var(--user-sidebar-width) - 180px + var(--user-sidebar-spacer)
+    ) !important;
+  }
+
+  /**
+   * Align the top carousel when searching movies.
+   */
+
+  #kx {
+    margin-inline-start: calc(
+      var(--user-sidebar-width) + var(--user-sidebar-spacer)
     ) !important;
   }
 
