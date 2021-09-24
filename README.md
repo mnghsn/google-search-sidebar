@@ -24,6 +24,12 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.3.9** (2021-09-24)
+  * Fix the new overview menu position.
+  * Fix the sidebar position when the screen is small.
+  * Fix the action menu colors for dark mode.
+  * Fix "Clear" button position.
+  * Fix userstyle meta key (`@homepageURL`).
 * **v0.3.8** (2020-11-13)
   * Fix wrong sidebar width when Google search is opened in the background.
   * Fix carousel overlapping.
