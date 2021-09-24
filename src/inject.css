@@ -32,6 +32,7 @@
   display: block !important; /* 1 */
   position: absolute !important; /* 1 */
   top: 68px !important; /* 1 */
+  margin-left: calc(-1 * (var(--user-sidebar-width) - 152px)) !important; /* 1 */
   width: var(--user-sidebar-width); /* 2 */
   background: unset !important; /* 3 */
 }
@@ -111,11 +112,16 @@
  * Move main content and footer to the right.
  */
 
-#rcnt,
-#slim_appbar {
-  padding-inline-start: calc(
-    var(--user-sidebar-width) - 180px + var(--user-sidebar-spacer)
-  ) !important;
+.appbar,
+.GLcBOb,
+.GyAeWb {
+  margin-left: calc(var(--user-sidebar-width) - 152px) !important;
+}
+
+html[dir="rtl"] .appbar,
+html[dir="rtl"] .GLcBOb,
+html[dir="rtl"] .GyAeWb {
+  margin-right: calc(var(--user-sidebar-width) - 152px) !important;
 }
 
 /**
