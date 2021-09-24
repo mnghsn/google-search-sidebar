@@ -90,9 +90,9 @@
 /**
  * Align the "Clear" button in the bottom of sidebar.
  */
-#hdtbMenus #hdtb-rst {
+#hdtbMenus > span + a.hdtb-mn-hd {
   display: block !important;
-  padding: 0 var(--user-sidebar-spacer) !important;
+  padding: 0 32px !important;
 }
 
 /**
