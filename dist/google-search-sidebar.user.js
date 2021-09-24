@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.3.8
+// @version         0.3.9
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
@@ -34,7 +34,7 @@ GM_addStyle(`
     --user-sidebar-primary-color: #dd4b39;
 
     --user-action-menu-spacer: 2px;
-    --user-action-menu-background: #eee;
+    --user-action-menu-background: rgba(0, 0, 0, 0.1);
     --user-action-menu-font-size: 85%;
   }
 
@@ -59,6 +59,7 @@ GM_addStyle(`
     display: block !important; /* 1 */
     position: absolute !important; /* 1 */
     top: 68px !important; /* 1 */
+    margin-left: calc(-1 * (var(--user-sidebar-width) - 152px)) !important; /* 1 */
     width: var(--user-sidebar-width); /* 2 */
     background: unset !important; /* 3 */
   }
@@ -117,9 +118,9 @@ GM_addStyle(`
   /**
    * Align the "Clear" button in the bottom of sidebar.
    */
-  #hdtbMenus #hdtb-rst {
+  #hdtbMenus > span + a.hdtb-mn-hd {
     display: block !important;
-    padding: 0 var(--user-sidebar-spacer) !important;
+    padding: 0 32px !important;
   }
 
   /**
@@ -138,11 +139,67 @@ GM_addStyle(`
    * Move main content and footer to the right.
    */
 
-  #rcnt,
-  #slim_appbar {
-    padding-inline-start: calc(
-      var(--user-sidebar-width) - 180px + var(--user-sidebar-spacer)
-    ) !important;
+  .appbar,
+  .GLcBOb,
+  .GyAeWb {
+    margin-left: calc(var(--user-sidebar-width) - 152px) !important;
+  }
+
+  html[dir="rtl"] .appbar,
+  html[dir="rtl"] .GLcBOb,
+  html[dir="rtl"] .GyAeWb {
+    margin-right: calc(var(--user-sidebar-width) - 152px) !important;
+  }
+
+  /**
+   * Align the menu on the top of the search results
+   */
+
+  .e2tKq {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    top: 0;
+    margin: 0 0 16px 0;
+    width: 1065px;
+  }
+
+  .Slohld {
+    display: flex;
+    margin: 1px 4px 1px 0;
+    padding-top: 0;
+    overflow: hidden;
+  }
+
+  .Slohld .MjJo9 {
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+
+  .e2tKq .BWHSG {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .e2tKq .BWHSG .XQIMve {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .K20DDe {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 20px 0 0;
+    white-space: nowrap;
+  }
+
+  .Ub31p .NnvERc.eoNQle {
+    margin-right: 10px;
+  }
+
+  .s6JM6d .eoNQle img {
+    max-height: 48px;
+    width: auto;
   }
 
   /**
@@ -226,6 +283,7 @@ GM_addStyle(`
   .action-menu .action-menu-item {
     display: inline-block !important; /* 1 */
     margin: 0 var(--user-action-menu-spacer) !important; /* 2 */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important; /* 2 */
     background: var(--user-action-menu-background) !important; /* 2 */
   }
 
@@ -248,22 +306,5 @@ GM_addStyle(`
 
   #simSearchFrame {
     margin-left: calc(-1 * (var(--user-sidebar-width) / 2)) !important;
-  }
-
-  /*
-   * Fix Google Search Region dropdown menu.
-   */
-
-  .hdtb-mn-cont > .hide-focus-ring {
-    display: block !important;
-    width: var(--user-sidebar-width) !important;
-    min-width: var(--user-sidebar-width) !important;
-    max-width: var(--user-sidebar-width) !important;
-  }
-
-  ul.gm-region-menu-dropdown {
-    display: block;
-    position: static;
-    box-shadow: none;
   }
 `)
