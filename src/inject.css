@@ -125,6 +125,57 @@ html[dir="rtl"] .GyAeWb {
 }
 
 /**
+ * Align the menu on the top of the search results
+ */
+
+.e2tKq {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  top: 0;
+  margin: 0 0 16px 0;
+  width: 1065px;
+}
+
+.Slohld {
+  display: flex;
+  margin: 1px 4px 1px 0;
+  padding-top: 0;
+  overflow: hidden;
+}
+
+.Slohld .MjJo9 {
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.e2tKq .BWHSG {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.e2tKq .BWHSG .XQIMve {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.K20DDe {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 20px 0 0;
+  white-space: nowrap;
+}
+
+.Ub31p .NnvERc.eoNQle {
+  margin-right: 10px;
+}
+
+.s6JM6d .eoNQle img {
+  max-height: 48px;
+  width: auto;
+}
+
+/**
  * Align the top carousel when searching movies.
  */
 
