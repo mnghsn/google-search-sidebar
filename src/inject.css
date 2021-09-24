@@ -7,7 +7,7 @@
   --user-sidebar-primary-color: #dd4b39;
 
   --user-action-menu-spacer: 2px;
-  --user-action-menu-background: #eee;
+  --user-action-menu-background: rgba(0, 0, 0, 0.1);
   --user-action-menu-font-size: 85%;
 }
 
@@ -199,6 +199,7 @@
 .action-menu .action-menu-item {
   display: inline-block !important; /* 1 */
   margin: 0 var(--user-action-menu-spacer) !important; /* 2 */
+  border: 1px solid rgba(255, 255, 255, 0.2) !important; /* 2 */
   background: var(--user-action-menu-background) !important; /* 2 */
 }
 
