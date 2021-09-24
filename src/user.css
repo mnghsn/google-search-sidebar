@@ -5,7 +5,7 @@
 @description        $inline('pkg:description')
 @author             $inline('pkg:author,name')
 @license            $inline('pkg:license')
-@homepage           $inline('pkg:homepage')
+@homepageURL        $inline('pkg:homepage')
 @supportURL         $inline('pkg:bugs,url')
 ==/UserStyle== */
 
