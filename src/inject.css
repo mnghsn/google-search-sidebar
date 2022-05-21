@@ -1,282 +1,161 @@
-/* CSS Variables
-   ========================================================================== */
+/** CSS Variables **/
 
 :root {
-  --user-sidebar-width: 200px;
-  --user-sidebar-spacer: 30px;
+  --user-sidebar-width: 180px;
+  --user-sidebar-spacer: 20px;
   --user-sidebar-primary-color: #dd4b39;
-
   --user-action-menu-spacer: 2px;
   --user-action-menu-background: rgba(0, 0, 0, 0.1);
   --user-action-menu-font-size: 85%;
 }
 
-/* Search Tools Menu
-   ========================================================================== */
+/** Navigation Bar **/
 
 /**
- * Hide "Tools" toggle.
+ * 1. Hide "Tools" toggle button on the navigation bar.
  */
-
 #hdtb-tls {
-  display: none !important;
+  display: none !important; /* 1. */
 }
 
-/**
- * 1. Make menu container visible.
- * 2. Set the sidebar width.
- * 3. Remove menu container background.
- */
+/** Search Menu **/
 
+/**
+ * 1. Reset all CSS properties of the search menu wrapper.
+ * 2. Show the search menu wrapper in the proper position.
+ */
 #hdtbMenus {
-  display: block !important; /* 1 */
-  position: absolute !important; /* 1 */
-  top: 68px !important; /* 1 */
-  margin-left: calc(-1 * (var(--user-sidebar-width) - 152px)) !important; /* 1 */
-  width: var(--user-sidebar-width); /* 2 */
-  background: unset !important; /* 3 */
+  all: unset !important; /* 1. */
+  display: block !important; /* 2. */
+  position: absolute !important; /* 2. */
 }
 
 /**
- * Remove original menu height.
+ * 1. Reset all CSS properties of the search menu parent.
+ * 2. Place search menus vertically.
+ * 3. Set the gap space between each search menu.
  */
-
-#hdtbMenus .hdtb-mn-cont {
-  height: 0 !important;
+#hdtbMenus #tn_1 {
+  all: unset !important; /* 1. */
+  display: flex !important; /* 2. */
+  flex-direction: column !important; /* 2. */
+  gap: var(--user-sidebar-spacer) !important; /* 3. */
 }
 
 /**
- * 1. Make dropdowns visible.
- * 2. Add bottom space to each dropdown.
- * 3. Remove dropdown background and shadow.
- * 4. Wrap dropdowns text if too long.
+ * 1. Remove the leading space of the search menu wrapper.
  */
-#hdtbMenus div.EwsJzb {
-  display: block !important; /* 1 */
-  position: static !important; /* 1 */
-}
-
-#hdtbMenus div.sAKBe {
-  box-shadow: none !important; /* 3 */
-  border-radius: 0 !important; /* 3 */
-}
-
-#hdtbMenus g-menu {
-  padding-top: 0 !important; /* 2 */
-  padding-bottom: var(--user-sidebar-spacer) !important; /* 2 */
-  background: unset !important; /* 3 */
-}
-
-#hdtbMenus div.znKVS {
-  white-space: normal !important; /* 4 */
+#hdtbMenus #tn_1 > div:nth-child(1) {
+  display: none !important; /* 1. */
 }
 
 /**
- * Hide dropdown toggle by default.
+ * 1. Hide the menu toggle button.
+ * 2. Reset all CSS properties of the dropdown menu.
+ * 3. Show the dropdown menu in the proper position.
+ * 4. Set the sidebar width with paddings.
  */
-#hdtbMenus div.rIbAWc {
-  display: none !important;
+#hdtbMenus #tn_1 g-popup > div:nth-child(1) {
+  display: none !important; /* 1. */
+}
+#hdtbMenus #tn_1 g-popup > div:nth-child(2) {
+  all: unset !important; /* 2. */
+  display: block !important; /* 3. */
+  position: static !important; /* 3. */
+  width: calc(var(--user-sidebar-width) - 20px) !important; /* 4. */
+  max-width: calc(var(--user-sidebar-width) - 20px) !important; /* 4. */
 }
 
 /**
- * 1. Remove checkmark on selected dropdown items.
- * 2. Emphasize selected dropdown items.
+ * 1. Remove the check image on the active menu item.
+ * 2. Set the styles of the active menu item.
  */
-#hdtbMenus g-menu-item.nvELY {
-  background-image: none !important; /* 1 */
-  color: var(--user-sidebar-primary-color) !important; /* 2 */
-  font-weight: bolder !important; /* 2 */
+#hdtbMenus #tn_1 g-menu-item.nvELY {
+  background-image: unset !important; /* 1. */
+  color: var(--user-sidebar-primary-color) !important; /* 2. */
+  font-weight: bolder !important; /* 2. */
 }
 
 /**
- * Align the "Clear" button in the bottom of sidebar.
+ * 1. Set the styles of "Clear" menu item on the sidebar.
  */
-#hdtbMenus > span + a.hdtb-mn-hd {
-  display: block !important;
-  padding: 0 32px !important;
+#hdtbMenus #tn_1 > a.hdtb-mn-hd {
+  padding: 4px 32px !important; /* 1. */
+}
+#hdtbMenus #tn_1 > a.hdtb-mn-hd:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important; /* 1. */
+  text-decoration: unset !important; /* 1. */
 }
 
 /**
- * Make result status text ("About xxx,xxx results") visible.
+ * 1. Fix the position of the label showing "About ***,*** results...".
  */
-
-#extabar div.LHJvCe {
-  position: static !important;
-  opacity: 1 !important;
+#appbar div.LHJvCe {
+  top: unset !important; /* 1. */
+  opacity: unset !important; /* 1. */
 }
 
-/* Main Content and Footer
-   ========================================================================== */
+/** Main Page Content **/
 
 /**
- * Move main content and footer to the right.
+ * 1. Set the proper position of the main page content.
+ *    (No "!important" here to make Shopping search display correctly.)
  */
-
-.appbar,
-.GLcBOb,
-.GyAeWb {
-  margin-left: calc(var(--user-sidebar-width) - 152px) !important;
-}
-
-html[dir="rtl"] .appbar,
-html[dir="rtl"] .GLcBOb,
-html[dir="rtl"] .GyAeWb {
-  margin-right: calc(var(--user-sidebar-width) - 152px) !important;
+#appbar,
+#center_col,
+#rcnt div.M8OgIe {
+  margin-left: var(--user-sidebar-width); /* 1. */
 }
 
 /**
- * Align the menu on the top of the search results
+ * 1. Set the proper position of the Wikipedia block.
+ *    ("--rhs-margin" is the CSS variable defined by Google.)
  */
-
-.e2tKq {
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  top: 0;
-  margin: 0 0 16px 0;
-  width: 1065px;
+#rhs {
+  margin-left: var(--rhs-margin); /* 1. */
 }
 
-.Slohld {
-  display: flex;
-  margin: 1px 4px 1px 0;
-  padding-top: 0;
-  overflow: hidden;
-}
-
-.Slohld .MjJo9 {
-  padding: 8px 16px;
-  border-radius: 20px;
-}
-
-.e2tKq .BWHSG {
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-
-.e2tKq .BWHSG .XQIMve {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.K20DDe {
-  display: flex;
-  align-items: flex-end;
-  padding: 0 20px 0 0;
-  white-space: nowrap;
-}
-
-.Ub31p .NnvERc.eoNQle {
-  margin-right: 10px;
-}
-
-.s6JM6d .eoNQle img {
-  max-height: 48px;
-  width: auto;
-}
+/** Action Menu **/
 
 /**
- * Align the top carousel when searching movies.
- */
-
-#kx {
-  margin-inline-start: calc(
-    var(--user-sidebar-width) + var(--user-sidebar-spacer)
-  ) !important;
-}
-
-/**
- * Align new material icons toolbar.
+ * 1. Hide the dropdown arrow.
 */
-
-#hdtb-msb-vis {
-  padding-inline-start: calc(
-    var(--user-sidebar-width) - 180px + var(--user-sidebar-spacer)
-  ) !important;
+div.g g-popup > div {
+  display: none !important; /* 1. */
 }
 
 /**
- * Move "People also search for" carousel.
+ * 1. Reset all CSS properties of the dropdown menu.
+ * 2. Show the dropdown menu in the proper position.
  */
-
-#extabar div[role="navigation"] {
-  padding-inline-start: calc(
-    var(--user-sidebar-width) + var(--user-sidebar-spacer)
-  ) !important;
-}
-
-#extabar div.LXqMce {
-  margin-left: 0 !important;
-}
-
-#extabar div.LXqMce:dir(rtl) {
-  margin-right: 0 !important;
-}
-
-#extabar div[role="list"] {
-  padding-left: 0 !important;
-}
-
-#extabar div[role="list"]:dir(rtl) {
-  padding-right: 0 !important;
-}
-
-/* Action Menu
-   ========================================================================== */
-
-/**
- * Hide action menu toggle.
- */
-
-.action-menu > a {
-  display: none !important;
+div.g div.EwsJzb {
+  all: unset !important; /* 1. */
+  display: inline-block !important; /* 2. */
 }
 
 /**
- * 1. Make action menu visible.
- * 2. Reset action menu position.
- * 3. Remove decoration styles from action menu.
+ * 1. Reset all CSS properties of the dropdown menu.
+ * 2. Place the menu item horizontally.
+ * 3. Set the gap space between each menu item.
  */
-
-.action-menu .action-menu-panel {
-  display: inline-block !important; /* 2 */
-  visibility: visible !important; /* 1 */
-  position: relative !important; /* 2 */
-  top: calc(var(--user-action-menu-spacer) * -1) !important; /* 2 */
-  border: 0 !important; /* 3 */
-  box-shadow: none !important; /* 3 */
-  background: transparent !important; /* 3 */
+div.g div.EwsJzb g-menu {
+  all: unset !important; /* 1. */
+  display: flex !important; /* 2. */
+  flex-direction: row !important; /* 2. */
+  gap: var(--user-action-menu-spacer) !important; /* 3. */
+}
+div.g div.EwsJzb g-menu-item {
+  all: unset !important; /* 1. */
+}
+div.g div.EwsJzb g-menu-item > div {
+  all: unset !important; /* 1. */
 }
 
 /**
- * 1. Make action menu items display inline.
- * 2. Reset menu items styles.
+ * 1. Set the styles of the dropdown menu item.
  */
-
-.action-menu .action-menu-item {
-  display: inline-block !important; /* 1 */
-  margin: 0 var(--user-action-menu-spacer) !important; /* 2 */
-  border: 1px solid rgba(255, 255, 255, 0.2) !important; /* 2 */
-  background: var(--user-action-menu-background) !important; /* 2 */
-}
-
-/**
- * Make action menu items smaller.
- */
-
-.action-menu a.fl {
-  padding: var(--user-action-menu-spacer)
-    calc(var(--user-action-menu-spacer) * 2) !important;
-  font-size: var(--user-action-menu-font-size) !important;
-}
-
-/* Third-Party Compatibility
-   ========================================================================== */
-
-/**
- * Align Evernote Similar Search block.
- */
-
-#simSearchFrame {
-  margin-left: calc(-1 * (var(--user-sidebar-width) / 2)) !important;
+div.g div.EwsJzb g-menu-item a {
+  padding: 0 5px !important; /* 1. */
+  background-color: var(--user-action-menu-background) !important; /* 1. */
+  font-size: var(--user-action-menu-font-size) !important; /* 1. */
 }
