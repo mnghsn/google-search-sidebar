@@ -22,6 +22,10 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 * From **Greasy Fork**: https://greasyfork.org/en/scripts/414403-google-search-sidebar
 * From **GitHub**: https://raw.githubusercontent.com/jmlntw/google-search-sidebar/master/dist/google-search-sidebar.user.css
 
+## Known Issues
+
+* Not working in Google Image Search due to the CSS limitation (#25).
+
 ## Changelog
 
 * **v0.3.9** (2021-09-24)
