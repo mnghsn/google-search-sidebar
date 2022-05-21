@@ -28,6 +28,10 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.3.10** (2022-05-21)
+  * Update the CSS to match the latest Google Search.
+  * Fix the action menu styles.
+  * Clean legacy codes.
 * **v0.3.9** (2021-09-24)
   * Fix the new overview menu position.
   * Fix the sidebar position when the screen is small.
