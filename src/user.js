@@ -11,6 +11,7 @@
 // @exclude         /^https:\/\/(?:ipv4|ipv6|www)\.google\.(?:[a-z\.]+)\/search\?(?:.+&)?tbm=lcl(?:&.+)?$/
 // @compatible      firefox
 // @compatible      chrome
+// @compatible      edge
 // @compatible      opera
 // @run-at          document-end
 // @grant           none
