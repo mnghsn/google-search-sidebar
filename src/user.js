@@ -5,7 +5,7 @@
 // @description     $inline('pkg:description')
 // @author          $inline('pkg:author,name')
 // @license         $inline('pkg:license')
-// @homepage        $inline('pkg:homepage')
+// @homepageURL     $inline('pkg:homepage')
 // @supportURL      $inline('pkg:bugs,url')
 // @include         /^https:\/\/(?:ipv4|ipv6|www)\.google\.(?:[a-z\.]+)\/search\?(?:.+&)?q=[^&]+(?:&.+)?$/
 // @exclude         /^https:\/\/(?:ipv4|ipv6|www)\.google\.(?:[a-z\.]+)\/search\?(?:.+&)?tbm=lcl(?:&.+)?$/
