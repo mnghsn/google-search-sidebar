@@ -28,6 +28,10 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.4.0** (2022-07-06)
+  * Update URL matching rules.
+  * Update metadata.
+  * Flag as compatible with Microsoft Edge on Greasy Fork.
 * **v0.3.10** (2022-05-21)
   * Update the CSS to match the latest Google Search.
   * Fix the action menu styles.
