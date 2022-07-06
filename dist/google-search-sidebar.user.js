@@ -1,16 +1,17 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.3.10
+// @version         0.4.0
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
-// @homepage        https://github.com/jmlntw/google-search-sidebar
+// @homepageURL     https://github.com/jmlntw/google-search-sidebar
 // @supportURL      https://github.com/jmlntw/google-search-sidebar/issues
-// @include         https://www.google.*/search?*
-// @include         https://www.google.*/webhp?*
+// @include         /^https:\/\/(?:ipv4|ipv6|www)\.google\.(?:[a-z\.]+)\/search\?(?:.+&)?q=[^&]+(?:&.+)?$/
+// @exclude         /^https:\/\/(?:ipv4|ipv6|www)\.google\.(?:[a-z\.]+)\/search\?(?:.+&)?tbm=lcl(?:&.+)?$/
 // @compatible      firefox
 // @compatible      chrome
+// @compatible      edge
 // @compatible      opera
 // @run-at          document-end
 // @grant           none
