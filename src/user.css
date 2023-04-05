@@ -11,7 +11,6 @@
 
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document
-  regexp("^https:\/\/(?:ipv4|ipv6|www)\.google\.(?:[a-z\.]+)\/search\?(?!(?:.+&)?tbm=lcl(?:&.+)?).+$") {
+@-moz-document regexp("^https:\/\/(?:ipv4|ipv6|www)\.google\.(?:[a-z\.]+)\/search\?(?!(?:.+&)?tbm=lcl(?:&.+)?).+$") {
   /* $inline.line('inject.css|indent:2|trim') */
 }
