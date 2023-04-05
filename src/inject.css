@@ -108,11 +108,19 @@
 }
 
 /**
-  * 1. Set the proper position of the Wikipedia block.
-  *    ("--rhs-margin" is the CSS variable defined by Google.)
-  */
+ * 1. Set the proper position of the right information block.
+ *    ("--rhs-margin" is the CSS variable defined by Google.)
+ */
 #rhs {
   margin-left: var(--rhs-margin); /* 1. */
+}
+
+/**
+ * Do not move the right block to the bottom of the page if there's not enough
+ * space.
+ */
+#rcnt {
+  flex-wrap: nowrap !important;
 }
 
 /** Action Menu **/
