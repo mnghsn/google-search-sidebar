@@ -119,8 +119,10 @@
  * Do not move the right block to the bottom of the page if there's not enough
  * space.
  */
-#rcnt {
-  flex-wrap: nowrap !important;
+@supports(selector(:has(p))){
+  #rcnt:has(#rhs) {
+    flex-wrap: nowrap !important;
+  }
 }
 
 /** Action Menu **/
