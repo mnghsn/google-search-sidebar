@@ -28,7 +28,7 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
-* **v0.4.1** (2022-04-06)
+* **v0.4.1** (2023-04-06)
   * Fix drop-down menu.
   * Keep the information block on the right side.
 * **v0.4.0** (2022-07-06)
