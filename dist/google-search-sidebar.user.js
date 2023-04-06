@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.4.0
+// @version         0.4.1
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
@@ -136,18 +136,28 @@ GM_addStyle(`
   }
 
   /**
-   * 1. Set the proper position of the Wikipedia block.
+   * 1. Set the proper position of the right information block.
    *    ("--rhs-margin" is the CSS variable defined by Google.)
    */
   #rhs {
     margin-left: var(--rhs-margin); /* 1. */
   }
 
+  /**
+   * Do not move the right block to the bottom of the page if there's not enough
+   * space.
+   */
+  @supports (selector(:has(p))) {
+    #rcnt:has(#rhs) {
+      flex-wrap: nowrap !important;
+    }
+  }
+
   /** Action Menu **/
 
   /**
    * 1. Hide the dropdown arrow.
-  */
+   */
   div.g g-popup > div {
     display: none !important; /* 1. */
   }
@@ -156,7 +166,7 @@ GM_addStyle(`
    * 1. Reset all CSS properties of the dropdown menu.
    * 2. Show the dropdown menu in the proper position.
    */
-  div.g div.EwsJzb {
+  div.g div.pkWBse {
     all: unset !important; /* 1. */
     display: inline-block !important; /* 2. */
   }
@@ -166,23 +176,23 @@ GM_addStyle(`
    * 2. Place the menu item horizontally.
    * 3. Set the gap space between each menu item.
    */
-  div.g div.EwsJzb g-menu {
+  div.g div.pkWBse g-menu {
     all: unset !important; /* 1. */
     display: flex !important; /* 2. */
     flex-direction: row !important; /* 2. */
     gap: var(--user-action-menu-spacer) !important; /* 3. */
   }
-  div.g div.EwsJzb g-menu-item {
+  div.g div.pkWBse g-menu-item {
     all: unset !important; /* 1. */
   }
-  div.g div.EwsJzb g-menu-item > div {
+  div.g div.pkWBse g-menu-item > div {
     all: unset !important; /* 1. */
   }
 
   /**
    * 1. Set the styles of the dropdown menu item.
    */
-  div.g div.EwsJzb g-menu-item a {
+  div.g div.pkWBse g-menu-item a {
     padding: 0 5px !important; /* 1. */
     background-color: var(--user-action-menu-background) !important; /* 1. */
     font-size: var(--user-action-menu-font-size) !important; /* 1. */
