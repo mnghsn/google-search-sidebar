@@ -120,7 +120,7 @@
  * space.
  */
 @supports (selector(:has(p))) {
-  #rcnt:has(#rhs) {
+  #rcnt:has(#center_col:first-child + #rhs) {
     flex-wrap: nowrap !important;
   }
 }
