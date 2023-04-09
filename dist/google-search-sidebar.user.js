@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Google Search Sidebar
 // @namespace       jmln.tw
-// @version         0.4.1
+// @version         0.4.2
 // @description     A user script and user style to move Google search tools to sidebar.
 // @author          Jimmy Lin
 // @license         MIT
@@ -148,7 +148,7 @@ GM_addStyle(`
    * space.
    */
   @supports (selector(:has(p))) {
-    #rcnt:has(#rhs) {
+    #rcnt:has(#center_col:first-child + #rhs) {
       flex-wrap: nowrap !important;
     }
   }
