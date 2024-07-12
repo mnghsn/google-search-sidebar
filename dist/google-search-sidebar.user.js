@@ -197,4 +197,11 @@ GM_addStyle(`
     background-color: var(--user-action-menu-background) !important; /* 1. */
     font-size: var(--user-action-menu-font-size) !important; /* 1. */
   }
+
+  /**
+   * Hide search time on sidebar
+   */
+  #result-stats > nobr {
+    display: none;
+  }
 `)
