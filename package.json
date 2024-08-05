@@ -1,6 +1,6 @@
 {
   "name": "google-search-sidebar",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "private": true,
   "description": "A user script and user style to move Google search tools to sidebar.",
   "homepage": "https://github.com/jmlntw/google-search-sidebar",
