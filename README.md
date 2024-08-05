@@ -28,6 +28,9 @@ Install a user style manager such as [Stylish](https://userstyles.org/help/styli
 
 ## Changelog
 
+* **v0.4.3** (2024-08-05)
+  * Fix issue caused by dynamic div ids in Google Search. (#60)
+  * Hide search time on sidebar. (#58)
 * **v0.4.2** (2023-04-09)
   * Fix broken layout if search result has heading.
 * **v0.4.1** (2023-04-06)
