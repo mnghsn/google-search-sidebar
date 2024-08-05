@@ -63,7 +63,7 @@ GM_addStyle(`
    * 2. Place search menus vertically.
    * 3. Set the gap space between each search menu.
    */
-  #hdtbMenus #tn_1 {
+  #hdtbMenus div[id^="tn_"][id$="_1"] {
     all: unset !important; /* 1. */
     display: flex !important; /* 2. */
     flex-direction: column !important; /* 2. */
@@ -73,7 +73,7 @@ GM_addStyle(`
   /**
    * 1. Remove the leading space of the search menu wrapper.
    */
-  #hdtbMenus #tn_1 > div:nth-child(1) {
+  #hdtbMenus div[id^="tn_"][id$="_1"] > div:nth-child(1) {
     display: none !important; /* 1. */
   }
 
@@ -83,10 +83,10 @@ GM_addStyle(`
    * 3. Show the dropdown menu in the proper position.
    * 4. Set the sidebar width with paddings.
    */
-  #hdtbMenus #tn_1 g-popup > div:nth-child(1) {
+  #hdtbMenus div[id^="tn_"][id$="_1"] g-popup > div:nth-child(1) {
     display: none !important; /* 1. */
   }
-  #hdtbMenus #tn_1 g-popup > div:nth-child(2) {
+  #hdtbMenus div[id^="tn_"][id$="_1"] g-popup > div:nth-child(2) {
     all: unset !important; /* 2. */
     display: block !important; /* 3. */
     position: static !important; /* 3. */
@@ -98,7 +98,7 @@ GM_addStyle(`
    * 1. Remove the check image on the active menu item.
    * 2. Set the styles of the active menu item.
    */
-  #hdtbMenus #tn_1 g-menu-item.nvELY {
+  #hdtbMenus div[id^="tn_"][id$="_1"] g-menu-item.nvELY {
     background-image: unset !important; /* 1. */
     color: var(--user-sidebar-primary-color) !important; /* 2. */
     font-weight: bolder !important; /* 2. */
@@ -107,10 +107,10 @@ GM_addStyle(`
   /**
    * 1. Set the styles of "Clear" menu item on the sidebar.
    */
-  #hdtbMenus #tn_1 > a.hdtb-mn-hd {
+  #hdtbMenus div[id^="tn_"][id$="_1"] > a.hdtb-mn-hd {
     padding: 4px 32px !important; /* 1. */
   }
-  #hdtbMenus #tn_1 > a.hdtb-mn-hd:hover {
+  #hdtbMenus div[id^="tn_"][id$="_1"] > a.hdtb-mn-hd:hover {
     background-color: rgba(0, 0, 0, 0.1) !important; /* 1. */
     text-decoration: unset !important; /* 1. */
   }
@@ -196,5 +196,12 @@ GM_addStyle(`
     padding: 0 5px !important; /* 1. */
     background-color: var(--user-action-menu-background) !important; /* 1. */
     font-size: var(--user-action-menu-font-size) !important; /* 1. */
+  }
+
+  /**
+   * Hide search time on sidebar
+   */
+  #result-stats > nobr {
+    display: none;
   }
 `)
