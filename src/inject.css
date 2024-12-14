@@ -176,3 +176,10 @@ div.g div.pkWBse g-menu-item a {
 #result-stats > nobr {
   display: none;
 }
+
+/**
+ * change search result margin left
+ */
+#center_col {
+  margin-left: 0; 
+}
